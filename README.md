@@ -8,6 +8,9 @@ The setups steps expect following tools installed on the system.
 - Ruby [2.7.0p0]
 - Rails [6.0.3.2]
 
+#### Database design
+![Database](https://user-images.githubusercontent.com/33906363/85913738-84f1d080-b861-11ea-8e50-8fca856a01ab.png)
+
 ##### 1. Check out the repository
 
 ```bash
