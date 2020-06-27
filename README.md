@@ -17,7 +17,8 @@ git clone https://github.com/feedlyy/Nectico.git
 ##### 2. Install all dependencies
 
 ```bash
-bundle install
+1. run yarn install
+2. run bundle install
 ```
 
 ##### 3. Create and setup the database
