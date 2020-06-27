@@ -1,24 +1,56 @@
-# README
+# HOW TO INSTALL
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+##### Prerequisites
 
-Things you may want to cover:
+The setups steps expect following tools installed on the system.
 
-* Ruby version
+- Github
+- Ruby [2.7.0p0]
+- Rails [6.0.3.2]
 
-* System dependencies
+##### 1. Check out the repository
 
-* Configuration
+```bash
+git clone https://github.com/feedlyy/Nectico.git
+```
 
-* Database creation
+##### 2. Install all dependencies
 
-* Database initialization
+```bash
+bundle install
+```
 
-* How to run the test suite
+##### 3. Create and setup the database
 
-* Services (job queues, cache servers, search engines, etc.)
+```ruby
+rake db:create
+rake db:setup
+```
 
-* Deployment instructions
+If you using postgresql, add this to database.yml
 
-* ...
+```bash
+default: 
+port: 5432 (your db port)
+username: postgres (your username for postgre)
+password: postgres (your password for postgre)
+
+and change database name in your development, test or 
+production 
+```
+
+migrate your migration
+
+```ruby
+rake db:migrate
+```
+
+##### 4. Start the Rails server
+
+You can start the rails server using the command given below.
+
+```ruby
+bundle exec rails s
+```
+
+And now you can visit the site with the URL http://localhost:3000
