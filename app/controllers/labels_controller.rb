@@ -4,8 +4,7 @@ class LabelsController < ApplicationController
   # GET /labels
   # GET /labels.json
   def index
-    @labels = Label.all
-    render json: @labels, status: :ok
+    paginate Label.unscoped, per_page: 5
   end
 
   # GET /labels/1
